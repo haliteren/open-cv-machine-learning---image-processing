@@ -1,0 +1,7 @@
+//open anaconda spyder and console write this code
+pip install opencv-python
+pip install numpy
+pip install matplotlib
+// if you want version control write this code
+import cv2
+cv2.__version__
