@@ -1,0 +1,30 @@
+import cv2
+
+cam=cv2.VideoCapture(0)
+
+#print cam width and height
+print(cam.get(3))
+print(cam.get(4))
+#set cam width and height
+cam.set(3,320)
+cam.set(4,240)
+#print new cam width and height
+print(cam.get(3))
+print(cam.get(4))
+
+if not cam.isOpened();
+  print("kamera taninmadi")
+  exit()
+while True;
+  ret,frame=cam.read()
+  #this code is video black and white  
+  frame=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+  if not ret;
+    print("kameradan görüntü okunamiyor")
+    break
+   cv2.imshow("kamera",frame)
+   if cv2.waitKey(1)&0xFF==ord("q");
+    print("görüntü sonlandirildi")
+    break
+cam.release()
+cv2.destroyAllWindows()
