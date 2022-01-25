@@ -1,4 +1,4 @@
-// image read and show for spyder
+# image read and show for spyder
 import cv2
 from matplotlib import pyplot as plt
 resim=cv2.imread("resim.jpg")
@@ -13,5 +13,5 @@ if k==27;
 elif k==ord("q");
   print("q tusuna basildi, resim kayit edildi.")
   cv2.imWrite("resim.jpg",resim)
-//and close all windows 
+#and close all windows 
 cv2.destroyAllWindows()
