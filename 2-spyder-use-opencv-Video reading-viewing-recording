@@ -12,18 +12,18 @@ cam.set(4,240)
 print(cam.get(3))
 print(cam.get(4))
 
-if not cam.isOpened();
+if not cam.isOpened():
   print("kamera taninmadi")
   exit()
-while True;
+while True:
   ret,frame=cam.read()
   #this code is video black and white  
   frame=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-  if not ret;
+  if not ret:
     print("kameradan görüntü okunamiyor")
     break
    cv2.imshow("kamera",frame)
-   if cv2.waitKey(1)&0xFF==ord("q");
+   if cv2.waitKey(1)&0xFF==ord("q"):
     print("görüntü sonlandirildi")
     break
 cam.release()
