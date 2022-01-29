@@ -8,9 +8,9 @@ cv2.imshow("resim penceresi",resim)
 plt.imshow(resim,cmap="gray")
 plt.show
 k=cv2.waitKey(0)
-if k==27;
+if k==27:
   print("ESC tusuna basildi")
-elif k==ord("q");
+elif k==ord("q"):
   print("q tusuna basildi, resim kayit edildi.")
   cv2.imWrite("resim.jpg",resim)
 #and close all windows 
